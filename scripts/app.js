@@ -1,8 +1,15 @@
-require("dotenv").config();
+const apiKey = "YOURKEYHERE";
 
-const apiKey = process.env.APIKEY
+const getCity = async (city) => {
 
-const getCity = async () => {
   const baseURL = "http://dataservice.accuweather.com/locations/v1/cities/search";
-  const query = `?apiKey=${apiKey}`
+  const query = `?apiKey=${apiKey}&q=${city}`;
+
+  const response = await fetch(baseURL + query);
+  const data = await response.json();
+
+  console.log(data);
+
 }
+
+getCity("London");
