@@ -1,0 +1,46 @@
+:root {
+  font-size: 1.25em;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 0.9rem;
+}
+
+p {
+  font-size: 0.65rem;
+}
+
+input {
+  font-size: 0.5rem;
+  width: 75%;
+}
+
+.container {
+  width: 45%;
+  max-width: 525px;
+  min-width: 450px;
+  margin: 1.5rem auto 0 auto;
+  text-align: center;
+}
+
+.card {
+  width: 75%;
+
+  & img {
+    max-width: 525px;
+  }
+}

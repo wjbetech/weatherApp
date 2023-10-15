@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="bumblebee">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App | @wjbetech</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+  <div class="navbar bg-base-200">
+    <h1 class="navbar-header pl-4 text-gray-500">WEATHERY</h1>
+  </div>
+
+  <div class="container mt-6">
+
+    <h5 class=" text-gray-500 font-medium">WEATHER APP</h5>
+    <p class="text-gray-400 font-medium">SEARCH A LOCATION</p>
+
+    <form name="search">
+      <input type="text" placeholder="London" class="input input-bordered my-3 input-sm max-w-xs text-gray-500 text-xs font-medium" name="location" />
+    </form>
+
+    <div class="card card-bordered shadow-xl rounded mx-auto mt-2">
+      <img src="https://via.placeholder.com/200x200" alt="">
+      <div class="icon bg-base-100 mx-auto text-center">
+        <i class='bx bx-sun text-gray-500'></i>
+      </div>
+      <div class="details text-center my-2">
+        <h5 class="text-gray-500 text-xs font-medium">CITY NAME</h5>
+        <div class="text-gray-400 text-xs font-medium">WEATHER CONDITIONS</div>
+        <div class="temp my-2 text-xl font-medium text-gray-500">
+          <span>TEMP</span>
+          <span>&deg;C</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="scripts/forecast.js"></script>
+  <script src="scripts/app.js"></script>
+
+</body>
+</html>
